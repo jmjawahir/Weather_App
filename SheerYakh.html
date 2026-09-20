@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shir Yakh</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #a9336d;
+      }
+      h2 {
+        text-align: center;
+        font-size: 18px;
+        border: 1px solid #a9336d;
+        border-radius: 4px;
+        padding: 15px 24px;
+        max-width: 500px;
+        margin: 0% auto;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+      a {
+        text-align: center;
+        color: #a9336d;
+        display: block;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #a9336d;
+        text-decoration: underline;
+      }
+
+      button {
+        color: white;
+        margin: 20px auto;
+        border-radius: 15px;
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+        border: 1px solid #a9336d;
+        transition: all 150ms ease-in-out;
+        padding: 20px 30px;
+        background-color: #a9336d;
+        text-align: center;
+        display: block;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+      }
+      .footer {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sheer Yakh</h1>
+      <h2>Special Afghan Sheer Yakh</h2>
+      <br />
+      <img
+        src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/181/101/original/photo_2026-08-06_00-31-24.jpg?1785960111"
+        alt="Shir Yakh Photo"
+      />
+
+      <p>
+        The word “Sheer Yakh” literally means cold milk, And in Afghanistan it
+        is made with very few ingredients and a lot of effort. Almost no air is
+        incorporated since it is spun by hand, which gives it a very rich
+        consistency, similar to gelato. I’ve used everything under the sun to
+        try to replicate that texture but modern home ice cream makers spin too
+        much air and typical ice cream recipes get too hard when frozen. The
+        Ninja Creami actually gives me the closest to the texture of back home.
+        Is it exactly like the Sheer Yakh made by men young and old in the
+        streets and stall of Afghanistan – no and it never could be. But it is a
+        good, fairly effortless alternative.
+      </p>
+      <br />
+      <a href="https://en.wikipedia.org/wiki/Afghan_cuisine" target="_blank">
+        📖 Learn more about Afghanistan Cuisine on wikipedia</a
+      >
+      <button class="buy"><b> 👉 Buy Sheer Yakh</b></button>
+      <span class="footer">coded by JM</span>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let location = prompt("Where is your location?");
+
+        alert("Thank you  " + name + "! We'll be in touch by email soon! 😊");
+      }
+
+      let buyButton = document.querySelector(".buy");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
